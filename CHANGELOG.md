@@ -2,6 +2,19 @@
 
 All notable changes to `Dynamic Dashboard` will be documented in this file
 
+## v3.0.2 - 2024-10-05
+
+### What's Changed
+
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/lara-zeus/dynamic-dashboard/pull/36
+* Bump dependabot/fetch-metadata from 1.6.0 to 2.0.0 by @dependabot in https://github.com/lara-zeus/dynamic-dashboard/pull/37
+* Bump aglipanci/laravel-pint-action from 2.3.1 to 2.4 by @dependabot in https://github.com/lara-zeus/dynamic-dashboard/pull/39
+* Bump dependabot/fetch-metadata from 2.0.0 to 2.1.0 by @dependabot in https://github.com/lara-zeus/dynamic-dashboard/pull/40
+* Bump dependabot/fetch-metadata from 2.1.0 to 2.2.0 by @dependabot in https://github.com/lara-zeus/dynamic-dashboard/pull/41
+* Update HeadingWidget.blade.php by @atmonshi in https://github.com/lara-zeus/dynamic-dashboard/pull/42
+
+**Full Changelog**: https://github.com/lara-zeus/dynamic-dashboard/compare/v3.0.1...v3.0.2
+
 ## v3.0.1 - 2024-02-09
 
 ### What's Changed
@@ -23,6 +36,7 @@ to upgrade to v3, the name and the name space changed from `Rain` to `DynamicDas
 php artisna vendor:publish --tag=zeus-dynamic-dashboard-config
 
 
+
 ```
 this will crate the new config file `zeus-dynamic-dashboard.php`, and you can move your configuration from the old file `zeus-rain`
 
@@ -32,6 +46,7 @@ this will crate the new config file `zeus-dynamic-dashboard.php`, and you can mo
 DynamicDashboardPlugin::make()
 
 
+
 ```
 3- run the update script, since the namespace has changed, you need to run this command in the production to update the class names
 
@@ -39,6 +54,7 @@ DynamicDashboardPlugin::make()
 
 ```bash
 php artisan dynamic-dashboard:update-class
+
 
 
 ```
@@ -70,6 +86,7 @@ or republish the config file
 
 ```bash
 php artisan vendor:publish --tag=zeus-dynamic-dashboard-config --force
+
 
 
 
